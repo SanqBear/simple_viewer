@@ -5,11 +5,11 @@ import 'package:simple_viewer/page/instruction.dart';
 import 'package:simple_viewer/page/menu.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const SimpleViewerApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class SimpleViewerApp extends StatelessWidget {
+  const SimpleViewerApp({super.key});
 
   // This widget is the root of your application.
   @override
@@ -32,19 +32,19 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       onGenerateTitle: (context) => AppLocalizations.of(context)!.appTitle,
-      home: const MyHomePage(),
+      home: const MainPage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class MainPage extends StatefulWidget {
+  const MainPage({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<MainPage> createState() => MainPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class MainPageState extends State<MainPage> {
   String baseUrl = "";
   Widget? page;
 

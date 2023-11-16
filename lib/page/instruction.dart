@@ -15,41 +15,38 @@ class _InstructionPageState extends State<InstructionPage> {
     final Function updateUrl = widget.callback;
 
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('Instruction Page'),
-        ),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              const Text(
-                'Please enter the URL of the JSON file',
-              ),
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: TextField(
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: 'URL',
-                  ),
-                  onChanged: (text) {
-                    updateUrl(text);
-                  },
-                ),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => MenuPage(),
-                    ),
-                  );
-                },
-                child: const Text('Submit'),
-              ),
-            ],
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          const Text(
+            'Please enter the URL of the JSON file',
           ),
-        ));
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: TextField(
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'URL',
+              ),
+              onChanged: (text) {
+                updateUrl(text);
+              },
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => MenuPage(),
+                ),
+              );
+            },
+            child: const Text('Submit'),
+          ),
+        ],
+      ),
+    ));
   }
 }

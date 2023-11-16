@@ -18,6 +18,7 @@ dependencies:
   intl: any
   equatable: any
   flutter_bloc: any
+  localstorage: any
 
 dev_dependencies:
   flutter_test:

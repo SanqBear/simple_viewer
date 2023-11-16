@@ -23,9 +23,6 @@ class _MenuPageState extends State<MenuPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Menu Page'),
-      ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
