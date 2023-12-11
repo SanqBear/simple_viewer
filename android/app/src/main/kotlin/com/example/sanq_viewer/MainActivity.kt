@@ -1,4 +1,4 @@
-package com.example.simple_viewer
+package com.example.sanq_viewer
 
 import io.flutter.embedding.android.FlutterActivity
 

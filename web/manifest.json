@@ -1,6 +1,6 @@
 {
-    "name": "simple_viewer",
-    "short_name": "simple_viewer",
+    "name": "sanq_viewer",
+    "short_name": "sanq_viewer",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

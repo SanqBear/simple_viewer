@@ -1,3 +1,1 @@
-# simple_viewer project
-
-personal viewer project for studying
+# sanq_viewer
